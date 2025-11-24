@@ -12,6 +12,19 @@
 
 html { scroll-behavior: smooth; }
 
+/* Tilføjet onscroll effect fra css-animations-effect-onscroll-exercise! */
+
+section .animate {
+  opacity: 0;
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+section.show-animate .animate {
+  opacity: 1;
+  filter: blur(0px);
+}
+
 :root {
   --farve1: #FEF5EF;
   --farve2: #E1D3C2;
